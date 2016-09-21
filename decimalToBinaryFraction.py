@@ -39,9 +39,12 @@ while num > 0:
     result = str(num%2) + result
     num = num//2
 
-#Understood up to here
+print('Result line 1: ', result)
+#Fill in with 0s to the left up to p
 for i in range(p - len(result)):
     result = '0' + result
-
+print('Result line 2: ', result)
+#this line prints the first part (integer) + . + fraction part(decimal)
+#only useful when you type in something larger than 1
 result = result[0:-p] + '.' + result[-p:]
 print('The binary representation of the decimal ' + str(x) + ' is ' + str(result))
